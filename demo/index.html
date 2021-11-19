@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../lib/jquery-3.6.0.min.js"></script>
+    <style>
+        .box {
+            width: 800px;
+            height: 350px;
+            background-color: #18f808;
+        }
+    </style>
 </head>
 <body>
-    <button >点我试试</button>
-        <script>
-            $('button').click(function(){
-                $.ajax({
-                    type: 'get',
-                    url: 'http://127.0.0.1:8888/api/map',
-                    success: function(data){
-                        console.log(data);
-                    }
-                })
+    <input type="text">
+    <button >点我试试这个怎么样</button>
+    <div class="box"></div>
+    <script>
+        $('button').click(function(){
+            $.ajax({
+                type: 'get',
+                url: 'http://127.0.0.1:8888/api/map',
+                success: function(data){
+                    console.log(data);
+                }
             })
-            
-        </script>
+        })
+        
+    </script>}
 </body>
 </html>
